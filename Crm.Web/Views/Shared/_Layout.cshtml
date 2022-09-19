@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+     <title>@ViewBag.Title</title>
+
+    <!-- Required meta tags -->
+    <partial name="_MetaTags" />
+   
+    <!--HeaderRefrnces-->
+  <partial name="_HeaderRefrnces" />
+</head>
+<body>
+    <div class="container-scroller" dir="rtl">
+        <!-- partial:partials/_sidebar.html -->
+        <partial name="_Sidebar" />
+    
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_navbar.html -->
+            
+            <partial name="_Header" />
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+@RenderBody()
+                   
+                    <!-- content-wrapper ends -->
+                    <!-- partial:partials/_footer.html -->
+                  <partial name="_Footer" />
+                    <!-- partial -->
+                </div>
+                <!-- main-panel ends -->
+            </div>
+            <!-- page-body-wrapper ends -->
+        </div>
+
+     <!--FooterRefrences-->
+      <partial name="_FooterRefrences" />
+    </div>
+
+</body>
+</html>
